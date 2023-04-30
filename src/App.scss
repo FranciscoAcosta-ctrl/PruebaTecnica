@@ -27,7 +27,7 @@
     @include from-desktop-start {
       max-width: 1200px;
       max-height: 700px;
-      &:hover{
+      &:hover {
         box-shadow: 10px 10px 30px $bg-dark, -10px -10px 30px #444444;
       }
     }
@@ -114,7 +114,7 @@
     justify-content: center;
     padding: 0px 20px;
     .result-img {
-        width: 180px;
+      width: 180px;
     }
     .result {
       overflow: auto;
@@ -123,16 +123,15 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      h1{
+      h1 {
         width: 100%;
         font-size: 1.6rem;
       }
     }
   }
-  .navbar-all{
+  .navbar-all {
     position: fixed;
     top: 0px;
     right: 0px;
   }
-  
 }

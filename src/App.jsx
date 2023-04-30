@@ -1,16 +1,15 @@
-import { useState } from 'react'
-import './App.scss'
-import AplicationComponent from './components/aplicationComponent/AplicationComponent';
+import { useState } from "react";
+import "./App.scss";
+import AplicationComponent from "./components/aplicationComponent/AplicationComponent";
 
 function App() {
-
   return (
     <>
-    <div className="App">
-    <AplicationComponent></AplicationComponent>
+      <div className="App">
+        <AplicationComponent></AplicationComponent>
       </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -8,20 +8,41 @@ const ResultComponent = () => {
   const { result, loading } = useContext(NumberContext);
 
   useEffect(() => {
-    message()
+    message();
   }, [result]);
 
   const message = () => {
     switch (true) {
-        case isNaN(result):
-          return <h1 className="result color-orange"><ButtonModal/> Resultado Indefinido</h1>
-        case result === Infinity:
-            return <h1 className="result color-orange"><ButtonModal/> Resultado Infinito</h1>
-        case result === -Infinity:
-            return <h1 className="result color-orange"><ButtonModal/> Resultado es menos Infinito</h1>
-        default:
-            return result ? <div className="result"><h1 className="color-orange "><ButtonModal/>serie(n) = {result} </h1></div> : <img className="result-img" srcSet={imgResult} alt="result" />;
-      }
+      case isNaN(result):
+        return (
+          <h1 className="result color-orange">
+            <ButtonModal /> Resultado Indefinido
+          </h1>
+        );
+      case result === Infinity:
+        return (
+          <h1 className="result color-orange">
+            <ButtonModal /> Resultado Infinito
+          </h1>
+        );
+      case result === -Infinity:
+        return (
+          <h1 className="result color-orange">
+            <ButtonModal /> Resultado es menos Infinito
+          </h1>
+        );
+      default:
+        return result ? (
+          <div className="result">
+            <h1 className="color-orange ">
+              <ButtonModal />
+              serie(n) = {result}{" "}
+            </h1>
+          </div>
+        ) : (
+          <img className="result-img" srcSet={imgResult} alt="result" />
+        );
+    }
   };
 
   return (
@@ -35,9 +56,7 @@ const ResultComponent = () => {
             />
           </>
         ) : (
-          <>
-          {message()}
-          </>
+          <>{message()}</>
         )}
       </div>
     </>

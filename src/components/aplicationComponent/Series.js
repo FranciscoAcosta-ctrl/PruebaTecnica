@@ -48,21 +48,22 @@ class Series {
     }
     return fib;
   }
-  serie(n) { 
-    let number = parseInt(n) ;
-    let p = this.primo((number + 3));
-    let t = this.triangular((number - 1));
-    let f = this.fibonacci((number - 2));
-    if(p === Infinity || t === Infinity || f === Infinity){
+  serie(n) {
+    let number = parseInt(n);
+    let p = this.primo(number + 3);
+    let t = this.triangular(number - 1);
+    let f = this.fibonacci(number - 2);
+    if (p === Infinity || t === Infinity || f === Infinity) {
       return Infinity;
     }
     try {
-    return (p * t) / f;
-  } catch (error) {
-    console.log(`Error al calcular el término n-ésimo de la serie: ${error.message}`);
+      return (p * t) / f;
+    } catch (error) {
+      console.log(
+        `Error al calcular el término n-ésimo de la serie: ${error.message}`
+      );
+    }
   }
-  }
- 
 }
 
 export default Series;
