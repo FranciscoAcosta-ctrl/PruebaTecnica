@@ -13,7 +13,6 @@
     "test serie": "vitest serie.test.js",
     "test triangular": "vitest triangular.test.js",
     "test fibonacci": "vitest fibonacci.test.js",
-    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {

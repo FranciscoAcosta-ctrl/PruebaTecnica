@@ -7,10 +7,6 @@ describe('Prueba del método fibonacci de la clase Series', () => {
     series = new Series();
   });
 
-  test('Fibonacci de 0 debe ser 0', () => {
-    expect(series.fibonacci(0)).toBe(0);
-  });
-
   test('Fibonacci de 1 debe ser 1', () => {
     expect(series.fibonacci(1)).toBe(1);
   });
@@ -45,5 +41,9 @@ describe('Prueba del método fibonacci de la clase Series', () => {
 
   test('Fibonacci de 9 debe ser 34', () => {
     expect(series.fibonacci(9)).toBe(34);
+  });
+
+  test('Fibonacci de 10 debe ser 55', () => {
+    expect(series.fibonacci(10)).toBe(55);
   });
 });

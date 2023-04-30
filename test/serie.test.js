@@ -7,10 +7,6 @@ describe('Prueba del método serie de la clase Series', () => {
     series = new Series(); // Crear una nueva instancia de la clase Series antes de cada prueba
   });
 
-  test('La serie con n = 0 debe ser NaN', () => {
-    expect(series.serie(0)).toBe(NaN);
-  });
-
   test('La serie con n = 1 debe ser NaN', () => {
     expect(series.serie(1)).toBe(NaN);
   });
@@ -46,5 +42,9 @@ describe('Prueba del método serie de la clase Series', () => {
 
   test('La serie con n = 9 debe ser 102.46153846153847', () => {
     expect(series.serie(9)).toBe(102.46153846153847);
+  });
+
+  test('La serie con n = 10 debe ser 87.85714285714286', () => {
+    expect(series.serie(10)).toBe(87.85714285714286);
   });
 });
