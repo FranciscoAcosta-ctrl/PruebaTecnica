@@ -1,0 +1,137 @@
+@import "./index.scss";
+
+.App {
+  .form-all {
+    background: $bg-dark;
+    border-radius: 12px;
+    width: 100vw;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+    text-align: center;
+    transition: all 300ms;
+    @include from-tablet-start {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      justify-content: start;
+
+      max-width: 700px;
+      max-height: 700px;
+    }
+    @include from-desktop-start {
+      max-width: 1200px;
+      max-height: 700px;
+      &:hover{
+        box-shadow: 10px 10px 30px $bg-dark, -10px -10px 30px #444444;
+      }
+    }
+    @media (prefers-color-scheme: light) {
+      background: $bg-light;
+    }
+    .form-content {
+      margin-top: 50px;
+      padding: 20px;
+      @include from-desktop-start {
+        margin-top: 20px;
+      }
+      .form-title {
+        font-size: 26px;
+        font-weight: 900;
+        font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+
+        @include from-desktop-start {
+          font-size: 32px;
+        }
+      }
+      .form-text {
+        font-size: 20px;
+        font-weight: 300;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        @include from-desktop-start {
+          font-size: 24px;
+          margin-top: 25px;
+          margin-bottom: 12px;
+        }
+      }
+      .form-exp {
+        font-size: 18px;
+        font-weight: 800;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        font-style: italic;
+        @include from-desktop-start {
+          font-size: 20px;
+        }
+      }
+      .form-inputs {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .input {
+          background: $complement-dark;
+          border-radius: 12px;
+          width: 100%;
+          max-width: 380px;
+          @media (prefers-color-scheme: light) {
+            background: $bg-light;
+          }
+        }
+        .helper {
+          position: relative;
+          color: #9f9f9f;
+          @media (prefers-color-scheme: light) {
+            color: #7b7b7b;
+          }
+        }
+        .btn-submit {
+          margin-top: 20px;
+          width: 100%;
+          max-width: 380px;
+        }
+      }
+    }
+  }
+  .input {
+    label {
+      color: #fc9846 !important;
+    }
+  }
+  .result-all {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    .result-img {
+        width: 180px;
+    }
+    .result {
+      position: relative;
+      width: 100%;
+      max-width: 400px;
+      height: 180px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      h1{
+        width: 100%;
+        font-size: 2rem;
+      }
+    }
+  }
+  .navbar-all{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+  }
+}
