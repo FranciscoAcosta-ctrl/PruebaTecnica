@@ -112,12 +112,12 @@
     margin-bottom: 30px;
     display: flex;
     justify-content: center;
+    padding: 0px 20px;
     .result-img {
         width: 180px;
     }
     .result {
-      position: relative;
-      width: 100%;
+      overflow: auto;
       max-width: 400px;
       height: 180px;
       display: flex;
@@ -125,7 +125,7 @@
       align-items: center;
       h1{
         width: 100%;
-        font-size: 2rem;
+        font-size: 1.6rem;
       }
     }
   }
@@ -134,4 +134,5 @@
     top: 0px;
     right: 0px;
   }
+  
 }

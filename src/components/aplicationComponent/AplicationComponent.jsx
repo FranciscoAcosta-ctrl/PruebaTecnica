@@ -2,8 +2,7 @@ import React, { useState, useEffect } from "react";
 import { NumberContext } from "../../contexts/NumberContext";
 //Componentes principales de la prueba tecnica
 import FormComponent from "../formComponent/FormComponent";
-import ResultComponent from "../resultComponent/resultComponent";
-
+import ResultComponent from "../resultComponent/ResultComponent";
 import Series from "./Series";
 
 

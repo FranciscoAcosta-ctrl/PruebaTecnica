@@ -33,7 +33,7 @@ const FormComponent = () => {
     <>
         <div className="form-content">
           <h1 className="form-title">
-            Aplicacion <label className="color-orange">Tecnica</label>
+          Aplicación <label className="color-orange">Técnica</label>
           </h1>
           <p className="form-text">
             La finalidad de esta aplicación es resolver la siguiente ecuación:
@@ -44,13 +44,13 @@ const FormComponent = () => {
             </label>
           </div>
           <p className="form-text">
-            Introduce el valor de 'n' en el siguiente campo de texto:
+          Introduce el valor de 'n' en el siguiente campo de texto:
           </p>
           <form onSubmit={onForm} className="form-inputs">
             <StyledTextField
               className="input"
               value={valueInput}
-              label="Ingresa un numero"
+              label="Ingresa un número"
               id="numN"
               sx={{ width: "100%" }}
               required
@@ -66,7 +66,7 @@ const FormComponent = () => {
               onChange={changeValueInput}
               variant="outlined"
             />
-            <label htmlFor="numN" className="helper">Ingresa un numero positivo</label>
+            <label htmlFor="numN" className="helper">Ingresa un número positivo</label>
             <Button className="btn-submit" type="submit" variant="contained" endIcon={<SendIcon />} style={{background: "#DA813A"}}>
               Calcular
             </Button>
